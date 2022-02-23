@@ -1,0 +1,32 @@
+﻿namespace WatchFace.Parser.Models
+{
+    public enum WeatherCondition
+    {
+        Unknown,
+        PartlyCloudy,
+        CloudyAndRain,
+        CloudyAndSnow,
+        Sunny,
+        Cloudy,
+        LightRain,
+        LightSnow,
+        Rain,
+        Snow,
+        HeavySnow,
+        HeavyRain,
+        SandStorm,
+        SnowAndRain,
+        Fog,
+        Haze,
+        Storm,
+        VeryHeavySnow,
+        FloatingDust,
+        Downpour,
+        Hail,
+        HailStorm,
+        HeavyDownpour,
+        BlowingDust,
+        Tornado,
+        VeryHeavyDownpour
+    }
+}
