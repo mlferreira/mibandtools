@@ -11,11 +11,11 @@ namespace WatchFace.Parser.Models.Elements
         public ActivityElement Activity { get; set; }
         public DateElement Date { get; set; }
         public WeatherElement Weather { get; set; }
-        public GoalProgressElement StepsGoalProgress { get; set; }
+        public GoalProgressElement StepsProgress { get; set; }
         public StatusElement Status { get; set; }
         public BatteryElement Battery { get; set; }
         public AnalogDialElement AnalogDial { get; set; }
-        public GoalProgressElement CaloriesGoalProgress { get; set; }
+        public GoalProgressElement CaloriesProgress { get; set; }
 
         protected override Element CreateChildForParameter(Parameter parameter)
         {
@@ -37,8 +37,8 @@ namespace WatchFace.Parser.Models.Elements
                     Weather = new WeatherElement(parameter);
                     return Weather;
                 case 7:
-                    StepsGoalProgress = new GoalProgressElement(parameter);
-                    return StepsGoalProgress;
+                    StepsProgress = new GoalProgressElement(parameter);
+                    return StepsProgress;
                 case 8:
                     Status = new StatusElement(parameter);
                     return Status;
@@ -49,8 +49,8 @@ namespace WatchFace.Parser.Models.Elements
                     AnalogDial = new AnalogDialElement(parameter);
                     return AnalogDial;
                 case 15:
-                    CaloriesGoalProgress = new GoalProgressElement(parameter);
-                    return CaloriesGoalProgress;
+                    CaloriesProgress = new GoalProgressElement(parameter);
+                    return CaloriesProgress;
                 default:
                     return base.CreateChildForParameter(parameter);
             }

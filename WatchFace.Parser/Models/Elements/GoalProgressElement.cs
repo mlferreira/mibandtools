@@ -8,8 +8,7 @@ namespace WatchFace.Parser.Models.Elements
             base(parameter, parent, name) { }
 
         public GoalReachedElement GoalReached { get; set; }
-        public ImageSetElement Linear { get; set; }
-        // public LinearGoalProgressElement Linear { get; set; }
+        public LinearScaleProgressElement LineScale { get; set; }
         public CircularGoalProgressElement Circular { get; set; }
 
         protected override Element CreateChildForParameter(Parameter parameter)
@@ -20,8 +19,8 @@ namespace WatchFace.Parser.Models.Elements
                     GoalReached = new GoalReachedElement(parameter, this);
                     return GoalReached;
                 case 2:
-                    Linear = new ImageSetElement(parameter, this);
-                    return Linear;
+                    LineScale = new LinearScaleProgressElement(parameter, this);
+                    return LineScale;
                 case 3:
                     Circular = new CircularGoalProgressElement(parameter, this);
                     return Circular;

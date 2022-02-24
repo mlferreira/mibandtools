@@ -25,7 +25,6 @@ namespace WatchFace.Parser
         public List<Parameter> Parameters { get; private set; }
         public List<IResource> Resources { get; private set; }
         public Bitmap[] Images => Resources.OfType<Image>().Select(i => i.Bitmap).ToArray();
-        // public Bitmap[] Images;
 
         public void Read()
         {

@@ -28,7 +28,7 @@ namespace WatchFace.Parser
 
         private static Image CreateFrame(IDrawable watchFace, Bitmap[] resources, WatchState state)
         {
-            var preview = new Bitmap(152, 486);
+            var preview = new Bitmap(ConstantsMB6.ScreenWidth, ConstantsMB6.ScreenHeight);
             var graphics = Graphics.FromImage(preview);
             watchFace.Draw(graphics, resources, state);
             return preview;

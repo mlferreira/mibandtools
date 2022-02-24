@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants.cs" />
     <Compile Include="Elements\Activity.cs" />
     <Compile Include="Elements\ActivityElements\Calories.cs" />
     <Compile Include="Elements\ActivityElements\FormattedNumber.cs" />
@@ -117,6 +118,7 @@
     <Compile Include="Models\Elements\GoalProgress\LinearGoalProgressElement.cs" />
     <Compile Include="Models\Elements\Battery\BatteryImageSetElement.cs" />
     <Compile Include="Models\Elements\BatteryElement.cs" />
+    <Compile Include="Models\Elements\GoalProgress\LinearScaleProgressElement.cs" />
     <Compile Include="Models\Elements\StatusElement.cs" />
     <Compile Include="Models\Elements\AnalogDialElement.cs" />
     <Compile Include="Models\Elements\WeatherElement.cs" />
