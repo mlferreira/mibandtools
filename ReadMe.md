@@ -9,3 +9,4 @@ An attempt to make [Amazfitbip Tools](https://bitbucket.org/valeronm/amazfitbipt
 - check for missing WatchStates
 - test DayAmPmElement
 - fix colors
+- check json generation (might not be deleting the old one)

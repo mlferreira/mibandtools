@@ -8,6 +8,7 @@
         public static int SignatureSize = ResSignature.Length;
         public static int VersionPosition = 5; 
         public static int ResourcesCountPosition = 16;
+        public static string ResourceExtension = ".dat";
     }
     
     public static class ConstantsAmazfitBip
@@ -18,5 +19,6 @@
         public static int SignatureSize = ResSignature.Length;
         public static int VersionPosition = 5; 
         public static int ResourcesCountPosition = 16; 
+        public static string ResourceExtension = ".dat";
     }
 }

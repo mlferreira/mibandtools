@@ -4,7 +4,7 @@ namespace Resources.Models
 {
     public class Blob : IResource
     {
-        public static string ResourceExtension = ".dat";
+        public static readonly string ResourceExtension = ConstantsMB6.ResourceExtension;
         private readonly byte[] _data;
 
         public Blob(byte[] data)
