@@ -12,5 +12,6 @@ An attempt to make [Amazfitbip Tools](https://bitbucket.org/valeronm/amazfitbipt
 - fix battery numbers not rendering
 - fix steps/calories numbers not rendering
 - add heart progress 
+- fix colors
 
 

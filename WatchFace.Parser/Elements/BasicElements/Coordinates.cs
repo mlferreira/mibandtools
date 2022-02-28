@@ -9,11 +9,5 @@ namespace WatchFace.Parser.Elements.BasicElements
 
         [ParameterId(2)]
         public long Y { get; set; }
-        
-        [ParameterId(3)]
-        public long ImageIndex { get; set; }
-        
-        [ParameterId(4)]
-        public long ImagesCount { get; set; }
     }
 }

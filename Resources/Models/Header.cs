@@ -6,7 +6,8 @@ namespace Resources.Models
 {
     public class Header
     {
-        public const int HeaderSize = 20;
+        public static readonly int HeaderSize = ConstantsMB6.HeaderSize;
+        // public static readonly string ResSignature = ConstantsMB6.ResSignature;
         public const string ResSignature = "HMRES";
 
         public string Signature { get; protected set; } = ResSignature;
@@ -19,8 +20,8 @@ namespace Resources.Models
             for (var i = 0; i < buffer.Length; i++) buffer[i] = 0xff;
 
             Encoding.ASCII.GetBytes(ResSignature).CopyTo(buffer, 0);
-            buffer[5] = Version;
-            BitConverter.GetBytes(ResourcesCount).CopyTo(buffer, 16);
+            buffer[ConstantsMB6.VersionPosition] = Version;
+            BitConverter.GetBytes(ResourcesCount).CopyTo(buffer, ConstantsMB6.ResourcesCountPosition);
             writer.Write(buffer);
         }
 
@@ -29,9 +30,9 @@ namespace Resources.Models
             var buffer = reader.ReadBytes(HeaderSize);
             return new Header
             {
-                Signature = Encoding.ASCII.GetString(buffer, 0, 5),
-                Version = buffer[5],
-                ResourcesCount = BitConverter.ToUInt32(buffer, 16)
+                Signature = Encoding.ASCII.GetString(buffer, 0, ConstantsMB6.SignatureSize),
+                Version = buffer[ConstantsMB6.VersionPosition],
+                ResourcesCount = BitConverter.ToUInt32(buffer, ConstantsMB6.ResourcesCountPosition)
             };
         }
     }

@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants.cs" />
     <Compile Include="Extractor.cs" />
     <Compile Include="ImageLoader.cs" />
     <Compile Include="InvalidResourceException.cs" />
