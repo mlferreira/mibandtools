@@ -12,26 +12,26 @@
   },
   "Time": { // 3
     "Hours": { // 3.1
-      "Tens": <ImageSet>,
-      "Ones": <ImageSet>
+      "Tens": <Image Set>,
+      "Ones": <Image Set>
     },
     "Minutes": { // 3.2
-      "Tens": <ImageSet>,
-      "Ones": <ImageSet>
+      "Tens": <Image Set>,
+      "Ones": <Image Set>
     },
     "UnknownV11": 0 // 3.11
   },
   "Activity": { // 4
     "Steps": { // 4.1
-      "Number": <Composed Element>
+      "Number": <Image Box>
     },
     "Calories": { // 4.3
-      "Text": <Composed Element>,
+      "Text": <Image Box>,
       "SuffixImageIndex": 53, // 4.3.2
       "PrefixImageIndex": 52 // 4.3.3
     },
     "Pulse": { // 4.4
-      "Number": <Composed Element>,
+      "Number": <Image Box>,
       "NoDataImageIndex": 41 // 4.4.3
     },
     "UnknownV7": 0 // 4.7
@@ -39,11 +39,11 @@
   "Date": { // 5
     "MonthAndDayAndYear": { // 5.1
       "Separate": { // 5.1.1
-        "Month": <Composed Element>,
-        "Day": <Composed Element>
+        "Month": <Image Box>,
+        "Day": <Image Box>
       },
       "OneLine": {
-        "Number": <Composed Element>,
+        "Number": <Image Box>,
         "DelimiterImageIndex": 34
       },
       "TwoDigitsMonth": true, // 5.1.4
@@ -57,24 +57,9 @@
       "ImageIndexAMEN": 58, // 5.2.5
       "ImageIndexPMEN": 59 // 5.2.6
     },
-    "ENWeekDays": { // 5.4
-      "X": 14, // 5.4.1
-      "Y": 288, // 5.4.2
-      "ImageIndex": 35, // 5.4.3
-      "ImagesCount": 7 // 5.4.4
-    },
-    "CNWeekDays": {
-      "X": 14,
-      "Y": 288,
-      "ImageIndex": 49,
-      "ImagesCount": 7
-    },
-    "CN2WeekDays": {
-      "X": 14,
-      "Y": 288,
-      "ImageIndex": 42,
-      "ImagesCount": 7
-    }
+    "ENWeekDays": <Image Set>,
+    "CNWeekDays": <Image Set>,
+    "CN2WeekDays": <Image Set>
   },
   "StepsProgress": { // 7
     "LineScale": <Image Set>
@@ -157,7 +142,7 @@
 }
 ```
 
-#### Composed Element
+#### Image Box
 ```json
 { 
     "TopLeftX": <number 0~152>,      // 1

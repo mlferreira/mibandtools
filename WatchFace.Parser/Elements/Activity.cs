@@ -7,10 +7,10 @@ namespace WatchFace.Parser.Elements
     public class Activity
     {
         [ParameterId(1)]
-        public ComposedElement Steps { get; set; }
+        public ImageBoxObject Steps { get; set; }
 
         [ParameterId(2)]
-        public ComposedElement StepsGoal { get; set; }
+        public ImageBoxObject StepsGoal { get; set; }
 
         [ParameterId(3)]
         public Calories Calories { get; set; }

@@ -16,12 +16,12 @@ namespace WatchFace.Parser.Elements.AnalogDialFaceElements
         public long Color { get; set; }
 
         [ParameterId(3)]
-        public Coordinates Center { get; set; }
+        public CoordinatesObject Center { get; set; }
 
         [ParameterId(4)]
-        public List<Coordinates> Shape { get; set; }
+        public List<CoordinatesObject> Shape { get; set; }
 
         [ParameterId(5)]
-        public Image CenterImage { get; set; }
+        public ImageObject CenterImage { get; set; }
     }
 }

@@ -3,7 +3,7 @@ using WatchFace.Parser.Interfaces;
 
 namespace WatchFace.Parser.Models.Elements
 {
-    public class PulseElement : NumberElement, IDrawable
+    public class PulseElement : ImageBoxElement, IDrawable
     {
         public PulseElement(Parameter parameter, Element parent, string name = null) :
             base(parameter, parent, name) { }

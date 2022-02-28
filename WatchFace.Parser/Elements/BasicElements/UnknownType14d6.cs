@@ -8,10 +8,10 @@ namespace WatchFace.Parser.Elements.BasicElements
     public class UnknownType14d6
     {
         [ParameterId(1)]
-        public Coordinates Unknown1 { get; set; }
+        public CoordinatesObject Unknown1 { get; set; }
 
         [ParameterId(2)]
-        public Coordinates Unknown2 { get; set; }
+        public CoordinatesObject Unknown2 { get; set; }
 
         [ParameterId(3)]
         public long? Unknown3 { get; set; }

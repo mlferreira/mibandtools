@@ -6,7 +6,7 @@ namespace WatchFace.Parser.Elements
     public class BatteryText
     {
         [ParameterId(1)]
-        public ComposedElement Coordinates { get; set; }
+        public ImageBoxObject Coordinates { get; set; }
 
         [ParameterId(4)]
         public long SuffixImageIndex { get; set; }

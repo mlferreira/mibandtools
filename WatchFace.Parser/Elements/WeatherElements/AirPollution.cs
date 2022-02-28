@@ -6,9 +6,9 @@ namespace WatchFace.Parser.Elements.WeatherElements
     public class AirPollution
     {
         [ParameterId(1)]
-        public ComposedElement Index { get; set; }
+        public ImageBoxObject Index { get; set; }
 
         [ParameterId(2)]
-        public ImageSet Icon { get; set; }
+        public ImageSetObject Icon { get; set; }
     }
 }

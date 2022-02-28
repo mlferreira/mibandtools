@@ -10,7 +10,7 @@ namespace WatchFace.Parser.Models.Elements
         public TemperatureNumberElement(Parameter parameter, Element parent = null, string name = null) :
             base(parameter, parent, name) { }
 
-        public NumberElement Number { get; set; }
+        public ImageBoxElement Number { get; set; }
         public long MinusImageIndex { get; set; }
         public long? DegreesImageIndex { get; set; }
 
@@ -18,7 +18,9 @@ namespace WatchFace.Parser.Models.Elements
         {
             var drawingBox = altCoordinates == null ? Number.GetBox() : Number.GetAltBox(altCoordinates);
             var images = GetImagesForTemperature(resources, temperature);
-            DrawerHelper.DrawImages(drawer, images, (int) Number.Spacing, Number.Alignment, drawingBox);
+            // TODO how to deal with 2 spacings values
+            // DrawerHelper.DrawImages(drawer, images, (int) Number.Spacing, Number.Alignment, drawingBox);
+            DrawerHelper.DrawImages(drawer, images, (int) Number.SpacingX, Number.Alignment, drawingBox);
         }
 
         public List<Bitmap> GetImagesForTemperature(Bitmap[] resources, int temperature)
@@ -37,7 +39,7 @@ namespace WatchFace.Parser.Models.Elements
             switch (parameter.Id)
             {
                 case 1:
-                    Number = new NumberElement(parameter, this);
+                    Number = new ImageBoxElement(parameter, this);
                     return Number;
                 case 2:
                     MinusImageIndex = parameter.Value;

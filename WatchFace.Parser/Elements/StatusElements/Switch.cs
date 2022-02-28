@@ -6,7 +6,7 @@ namespace WatchFace.Parser.Elements.StatusElements
     public class Switch
     {
         [ParameterId(1)]
-        public Coordinates Coordinates { get; set; }
+        public CoordinatesObject Coordinates { get; set; }
 
         [ParameterId(2)]
         [ParameterImageIndex]

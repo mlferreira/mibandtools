@@ -3,7 +3,7 @@ using WatchFace.Parser.Interfaces;
 
 namespace WatchFace.Parser.Models.Elements
 {
-    public class AirQualityIndexNumberElement : NumberElement, IDrawable
+    public class AirQualityIndexNumberElement : ImageBoxElement, IDrawable
     {
         public AirQualityIndexNumberElement(Parameter parameter, Element parent = null, string name = null) :
             base(parameter, parent, name) { }

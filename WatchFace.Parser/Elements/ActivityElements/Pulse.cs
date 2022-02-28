@@ -6,7 +6,7 @@ namespace WatchFace.Parser.Elements.ActivityElements
     public class Pulse
     {
         [ParameterId(1)]
-        public ComposedElement Number { get; set; }
+        public ImageBoxObject Number { get; set; }
 
         [ParameterId(2)]
         [ParameterImageIndex]

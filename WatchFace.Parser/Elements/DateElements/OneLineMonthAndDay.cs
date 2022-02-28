@@ -6,7 +6,7 @@ namespace WatchFace.Parser.Elements.DateElements
     public class OneLineMonthAndDay
     {
         [ParameterId(1)]
-        public ComposedElement ComposedElement { get; set; }
+        public ImageBoxObject ComposedElement { get; set; }
 
         [ParameterId(2)]
         [ParameterImageIndex]

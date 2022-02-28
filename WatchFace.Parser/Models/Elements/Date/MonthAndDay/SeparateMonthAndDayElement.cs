@@ -8,8 +8,9 @@ namespace WatchFace.Parser.Models.Elements
         public SeparateMonthAndDayElement(Parameter parameter, Element parent = null, string name = null) :
             base(parameter, parent, name) { }
 
-        public NumberElement Month { get; set; }
-        public NumberElement Day { get; set; }
+        public ImageBoxElement Month { get; set; }
+        public ImageBoxElement Day { get; set; }
+        public ImageBoxElement Year { get; set; }
 
         public void Draw(Graphics drawer, Bitmap[] resources, WatchState state)
         {
@@ -23,10 +24,11 @@ namespace WatchFace.Parser.Models.Elements
             switch (parameter.Id)
             {
                 case 1:
-                    Month = new NumberElement(parameter, this);
+                    Month = new ImageBoxElement(parameter, this);
                     return Month;
-                case 3:
-                    Day = new NumberElement(parameter, this);
+                // case 3:
+                case 4:
+                    Day = new ImageBoxElement(parameter, this);
                     return Day;
                 default:
                     return base.CreateChildForParameter(parameter);

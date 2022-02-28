@@ -5,7 +5,7 @@ using WatchFace.Parser.Models;
 
 namespace WatchFace.Parser.Elements.BasicElements
 {
-    public class ComposedElement
+    public class ImageBoxObject
     {
         [ParameterId(1)]
         public long TopLeftX { get; set; }

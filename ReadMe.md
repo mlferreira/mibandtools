@@ -7,7 +7,7 @@ An attempt to make [Amazfitbip Tools](https://bitbucket.org/valeronm/amazfitbipt
 
 *TODO:*
 - check for missing WatchStates
-- fix date not rendering
+- test DayAmPmElement
 - fix calorie progress
 - fix battery numbers not rendering
 - fix steps/calories numbers not rendering

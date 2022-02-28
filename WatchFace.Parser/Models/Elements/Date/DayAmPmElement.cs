@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using WatchFace.Parser.Interfaces;
+﻿using System.Drawing;
 
 namespace WatchFace.Parser.Models.Elements
 {
@@ -11,20 +8,17 @@ namespace WatchFace.Parser.Models.Elements
         public DayAmPmElement(Parameter parameter, Element parent, string name = null) :
             base(parameter, parent, name) { }
         
-        public long ImageIndexAMCN { get; set; }
-        public long ImageIndexPMCN { get; set; }
-        public long ImageIndexAMEN { get; set; }
-        public long ImageIndexPMEN { get; set; }
-
-
+        public long AMImageIndex { get; set; }
+        public long PMImageIndex { get; set; }
+        
         public void Draw(Graphics drawer, Bitmap[] resources, WatchState state)
         {
             var time = state.Time.Hour;
 
-            var image = resources[ImageIndexAMEN];
+            var image = resources[AMImageIndex];
             if (time >= 12)
             {
-                image = resources[ImageIndexPMEN];
+                image = resources[PMImageIndex];
             }
             
             drawer.DrawImage(image, new Point((int) X, (int) Y));
@@ -35,17 +29,13 @@ namespace WatchFace.Parser.Models.Elements
             switch (parameter.Id)
             {
                 case 3:
-                    ImageIndexAMCN = parameter.Value;
-                    return new ValueElement(parameter, this, nameof(ImageIndexAMCN));
-                case 4:
-                    ImageIndexPMCN = parameter.Value;
-                    return new ValueElement(parameter, this, nameof(ImageIndexPMCN));
                 case 5:
-                    ImageIndexAMEN = parameter.Value;
-                    return new ValueElement(parameter, this, nameof(ImageIndexAMEN));
+                    AMImageIndex = parameter.Value;
+                    return new ValueElement(parameter, this, nameof(AMImageIndex));
+                case 4:
                 case 6:
-                    ImageIndexPMEN = parameter.Value;
-                    return new ValueElement(parameter, this, nameof(ImageIndexPMEN));
+                    PMImageIndex = parameter.Value;
+                    return new ValueElement(parameter, this, nameof(PMImageIndex));
 
                 default:
                     return base.CreateChildForParameter(parameter);

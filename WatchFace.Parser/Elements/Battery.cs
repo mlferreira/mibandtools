@@ -9,7 +9,7 @@ namespace WatchFace.Parser.Elements
         public BatteryText BatteryText { get; set; }
 
         [ParameterId(2)]
-        public ImageSet BatteryIcon { get; set; }
+        public ImageSetObject BatteryIcon { get; set; }
 
         [ParameterId(3)]
         public Scale Scale { get; set; }

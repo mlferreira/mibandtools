@@ -6,15 +6,19 @@ namespace WatchFace.Parser.Elements
     public class Background
     {
         [ParameterId(1)]
-        public Image Image { get; set; }
+        public ImageObject Image { get; set; }
+        
+        // TODO
+        // [ParameterId(2)]
+        // public String BackgroundColor { get; set; }
         
         [ParameterId(3)]
-        public Image Preview1 { get; set; }
+        public ImageObject Preview1 { get; set; }
         
         [ParameterId(4)]
-        public Image Preview2 { get; set; }
+        public ImageObject Preview2 { get; set; }
         
         [ParameterId(5)]
-        public Image Preview3 { get; set; }
+        public ImageObject Preview3 { get; set; }
     }
 }

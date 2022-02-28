@@ -2,7 +2,7 @@
 
 namespace WatchFace.Parser.Elements.BasicElements
 {
-    public class Coordinates
+    public class CoordinatesObject
     {
         [ParameterId(1)]
         public long X { get; set; }

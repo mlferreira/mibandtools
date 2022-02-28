@@ -11,7 +11,7 @@ namespace WatchFace.Parser.Models.Elements
         public OnelineTemperatureElement(Parameter parameter, Element parent = null, string name = null) :
             base(parameter, parent, name) { }
 
-        public NumberElement Number { get; set; }
+        public ImageBoxElement Number { get; set; }
         public long MinusImageIndex { get; set; }
         public long DelimiterImageIndex { get; set; }
         public bool AppendDegreesToBoth { get; set; }
@@ -36,7 +36,9 @@ namespace WatchFace.Parser.Models.Elements
             if (DegreesImageIndex != null)
                 images.Add(resources[DegreesImageIndex.Value]);
 
-            DrawerHelper.DrawImages(drawer, images, Number.Spacing, Number.Alignment, Number.GetBox());
+            // TODO how to deal with 2 spacings values
+            // DrawerHelper.DrawImages(drawer, images, Number.Spacing, Number.Alignment, Number.GetBox());
+            DrawerHelper.DrawImages(drawer, images, Number.SpacingX, Number.Alignment, Number.GetBox());
         }
 
         protected override Element CreateChildForParameter(Parameter parameter)
@@ -44,7 +46,7 @@ namespace WatchFace.Parser.Models.Elements
             switch (parameter.Id)
             {
                 case 1:
-                    Number = new NumberElement(parameter, this);
+                    Number = new ImageBoxElement(parameter, this);
                     return Number;
                 case 2:
                     MinusImageIndex = parameter.Value;

@@ -6,7 +6,7 @@ namespace WatchFace.Parser.Elements.ActivityElements
     public class Calories
     {
         [ParameterId(1)]
-        public ComposedElement Text { get; set; }
+        public ImageBoxObject Text { get; set; }
 
         [ParameterId(2)]
         [ParameterImageIndex]

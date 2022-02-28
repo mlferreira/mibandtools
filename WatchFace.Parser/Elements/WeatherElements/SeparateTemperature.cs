@@ -13,21 +13,21 @@ namespace WatchFace.Parser.Elements.WeatherElements
         public TemperatureNumber Night { get; set; }
 
         [ParameterId(3)]
-        public Coordinates DayAlt { get; set; }
+        public CoordinatesObject DayAlt { get; set; }
 
         [ParameterId(4)]
-        public Coordinates NightAlt { get; set; }
+        public CoordinatesObject NightAlt { get; set; }
 
         // For compatibility with "Unknown3" JSON attribute
         [JsonProperty("Unknown3")]
-        private Coordinates Unknown3
+        private CoordinatesObject Unknown3
         {
             set { DayAlt = value; }
         }
 
         // For compatibility with "Unknown4" JSON attribute
         [JsonProperty("Unknown4")]
-        private Coordinates Unknown4
+        private CoordinatesObject Unknown4
         {
             set { NightAlt = value; }
         }

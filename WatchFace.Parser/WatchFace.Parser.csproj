@@ -59,12 +59,12 @@
     <Compile Include="Elements\Background.cs" />
     <Compile Include="Elements\BasicElements\CircleScale.cs" />
     <Compile Include="Elements\AnalogDialFaceElements\ClockHand.cs" />
-    <Compile Include="Elements\BasicElements\Coordinates.cs" />
-    <Compile Include="Elements\BasicElements\Image.cs" />
-    <Compile Include="Elements\BasicElements\ImageSet.cs" />
+    <Compile Include="Elements\BasicElements\CoordinatesObject.cs" />
+    <Compile Include="Elements\BasicElements\ImageObject.cs" />
+    <Compile Include="Elements\BasicElements\ImageSetObject.cs" />
     <Compile Include="Elements\BasicElements\UnknownType14d6.cs" />
     <Compile Include="Elements\BasicElements\UnknownType.cs" />
-    <Compile Include="Elements\BasicElements\ComposedElement.cs" />
+    <Compile Include="Elements\BasicElements\ImageBoxObject.cs" />
     <Compile Include="Elements\BasicElements\Scale.cs" />
     <Compile Include="Elements\Battery.cs" />
     <Compile Include="Elements\BatteryText.cs" />
@@ -106,6 +106,7 @@
     <Compile Include="Models\Elements\Basic\ContainerElement.cs" />
     <Compile Include="Models\Elements\Battery\BatteryLinearProgressElement.cs" />
     <Compile Include="Models\Elements\Battery\BatteryNumberElement.cs" />
+    <Compile Include="Models\Elements\Common\ImageBoxElement.cs" />
     <Compile Include="Models\Elements\Common\ImageSetElement.cs" />
     <Compile Include="Models\Elements\Common\CircularProgressElement.cs" />
     <Compile Include="Models\Elements\Common\ClockHandElement.cs" />

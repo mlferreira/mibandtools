@@ -16,12 +16,12 @@ namespace WatchFace.Parser.Elements
         public DateUnknown3 Unknown3 { get; set; }
 
         [ParameterId(4)]
-        public ImageSet ENWeekDays { get; set; }
+        public ImageSetObject ENWeekDays { get; set; }
         
         [ParameterId(5)]
-        public ImageSet CNWeekDays { get; set; }
+        public ImageSetObject CNWeekDays { get; set; }
         
         [ParameterId(6)]
-        public ImageSet CN2WeekDays { get; set; }
+        public ImageSetObject CN2WeekDays { get; set; }
     }
 }
