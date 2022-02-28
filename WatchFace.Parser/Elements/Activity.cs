@@ -7,7 +7,7 @@ namespace WatchFace.Parser.Elements
     public class Activity
     {
         [ParameterId(1)]
-        public ImageBoxObject Steps { get; set; }
+        public StepsObject Steps { get; set; }
 
         [ParameterId(2)]
         public ImageBoxObject StepsGoal { get; set; }
@@ -16,7 +16,7 @@ namespace WatchFace.Parser.Elements
         public Calories Calories { get; set; }
 
         [ParameterId(4)]
-        public Pulse Pulse { get; set; }
+        public PulseObject Pulse { get; set; }
 
         [ParameterId(5)]
         public FormattedNumber Distance { get; set; }

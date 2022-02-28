@@ -3,11 +3,8 @@ using WatchFace.Parser.Elements.BasicElements;
 
 namespace WatchFace.Parser.Elements.ActivityElements
 {
-    public class Pulse
+    public class PulseObject : ActivityBaseObject
     {
-        [ParameterId(1)]
-        public ImageBoxObject Number { get; set; }
-
         [ParameterId(2)]
         [ParameterImageIndex]
         public long? Unknown2 { get; set; }

@@ -15,7 +15,7 @@ namespace WatchFace.Parser.Models.Elements
         {
             var time = state.Time.Hour;
 
-            var image = resources[AMImageIndex];
+            var image = resources[PMImageIndex];
             if (time >= 12)
             {
                 image = resources[PMImageIndex];

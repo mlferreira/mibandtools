@@ -3,7 +3,7 @@ using WatchFace.Parser.Elements.BasicElements;
 
 namespace WatchFace.Parser.Elements.StatusElements
 {
-    public class Switch
+    public class StatusObject
     {
         [ParameterId(1)]
         public CoordinatesObject Coordinates { get; set; }

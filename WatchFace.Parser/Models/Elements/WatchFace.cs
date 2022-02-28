@@ -15,6 +15,7 @@ namespace WatchFace.Parser.Models.Elements
         public StatusElement Status { get; set; }
         public BatteryElement Battery { get; set; }
         public AnalogDialElement AnalogDial { get; set; }
+        public GoalProgressElement HeartProgress { get; set; }
         public GoalProgressElement CaloriesProgress { get; set; }
 
         protected override Element CreateChildForParameter(Parameter parameter)
@@ -48,6 +49,9 @@ namespace WatchFace.Parser.Models.Elements
                 case 10:
                     AnalogDial = new AnalogDialElement(parameter);
                     return AnalogDial;
+                case 12:
+                    HeartProgress = new GoalProgressElement(parameter);
+                    return HeartProgress;
                 case 15:
                     CaloriesProgress = new GoalProgressElement(parameter);
                     return CaloriesProgress;

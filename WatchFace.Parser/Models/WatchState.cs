@@ -9,7 +9,7 @@ namespace WatchFace.Parser.Models
         public DateTime Time { get; set; } = DateTime.Now;
 
         public int Steps { get; set; } = 14876;
-        public int Goal { get; set; } = 8000;
+        public int Goal { get; set; } = 10000;
         public int Calories { get; set; } = 764;
         public int Distance { get; set; } = 2367;
         public int? Pulse { get; set; } = 62;

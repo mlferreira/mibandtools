@@ -52,9 +52,11 @@
   <ItemGroup>
     <Compile Include="Constants.cs" />
     <Compile Include="Elements\Activity.cs" />
+    <Compile Include="Elements\ActivityElements\ActivityBaseObject.cs" />
     <Compile Include="Elements\ActivityElements\Calories.cs" />
     <Compile Include="Elements\ActivityElements\FormattedNumber.cs" />
-    <Compile Include="Elements\ActivityElements\Pulse.cs" />
+    <Compile Include="Elements\ActivityElements\PulseObject.cs" />
+    <Compile Include="Elements\ActivityElements\StepsObject.cs" />
     <Compile Include="Elements\AnalogDialFace.cs" />
     <Compile Include="Elements\Background.cs" />
     <Compile Include="Elements\BasicElements\CircleScale.cs" />
@@ -77,7 +79,7 @@
     <Compile Include="Elements\DateElements\SeparateMonthAndDay.cs" />
     <Compile Include="Elements\Progress.cs" />
     <Compile Include="Elements\Status.cs" />
-    <Compile Include="Elements\StatusElements\Switch.cs" />
+    <Compile Include="Elements\StatusElements\StatusObject.cs" />
     <Compile Include="Elements\UnknownType14.cs" />
     <Compile Include="Elements\Time.cs" />
     <Compile Include="Elements\TimeElements\AmPm.cs" />

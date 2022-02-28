@@ -82,7 +82,7 @@
   },
   "Battery": { // 9
     "BatteryText": { // 9.1
-      "Coordinates": <Composed Element>,
+      "Coordinates": <Image Box>,
       "SuffixImageIndex": 84 // 9.1.4
     },
     "BatteryIcon": <Image Set>
