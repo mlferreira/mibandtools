@@ -3,115 +3,7 @@
 ## Json
 ```json
 {
-  "Background": { // 2
-    "Image": <Image>,
-    "BackgroundColor": "0x000000",
-    "Preview1": <Image>,
-    "Preview2": <Image>,
-    "Preview3": <Image>
-  },
-  "Time": { // 3
-    "Hours": { // 3.1
-      "Tens": <Image Set>,
-      "Ones": <Image Set>
-    },
-    "Minutes": { // 3.2
-      "Tens": <Image Set>,
-      "Ones": <Image Set>
-    },
-    "UnknownV11": 0 // 3.11
-  },
-  "Activity": { // 4
-    "Steps": { // 4.1
-      "Number": <Image Box>
-    },
-    "Calories": { // 4.3
-      "Text": <Image Box>,
-      "SuffixImageIndex": 53, // 4.3.2
-      "PrefixImageIndex": 52 // 4.3.3
-    },
-    "Pulse": { // 4.4
-      "Number": <Image Box>,
-      "NoDataImageIndex": 41 // 4.4.3
-    },
-    "UnknownV7": 0 // 4.7
-  },
-  "Date": { // 5
-    "MonthAndDayAndYear": { // 5.1
-      "Separate": { // 5.1.1
-        "Month": <Image Box>,
-        "Day": <Image Box>
-      },
-      "OneLine": {
-        "Number": <Image Box>,
-        "DelimiterImageIndex": 34
-      },
-      "TwoDigitsMonth": true, // 5.1.4
-      "TwoDigitsDay": true // 5.1.5
-    },
-    "DayAmPm": { // 5.2
-      "X": 104, // 5.2.1
-      "Y": 288, // 5.2.2
-      "ImageIndexAMCN": 56, // 5.2.3
-      "ImageIndexPMCN": 57, // 5.2.4
-      "ImageIndexAMEN": 58, // 5.2.5
-      "ImageIndexPMEN": 59 // 5.2.6
-    },
-    "ENWeekDays": <Image Set>,
-    "CNWeekDays": <Image Set>,
-    "CN2WeekDays": <Image Set>
-  },
-  "StepsProgress": { // 7
-    "LineScale": <Image Set>
-  },
-  "Status": { // 8
-    "DoNotDisturb": { // 8.1
-      "Coordinates": <Coordinates>,
-      "ImageIndexOn": 71, // 8.1.2
-      "ImageIndexOff": 40 // 8.1.3
-    },
-    "Lock": { // 8.2
-      "Coordinates": <Coordinates>,
-      "ImageIndexOff": 72 // 8.2.3
-    },
-    "Bluetooth": { // 8.3
-      "Coordinates": <Coordinates>,
-      "ImageIndexOn": 43, // 8.3.2
-      "ImageIndexOff": 70  // 8.3.3
-    }
-  },
-  "Battery": { // 9
-    "BatteryText": { // 9.1
-      "Coordinates": <Image Box>,
-      "SuffixImageIndex": 84 // 9.1.4
-    },
-    "BatteryIcon": <Image Set>
-  },
-  "Other": {
-    "Animation": [
-      {
-        "AnimationImages": <Image Set>,
-        "Speed": 90,
-        "RepeatCount": 50,
-        "UnknownTF4": 1
-      }
-    ]
-  },
-  "Alarm": {
-    "Text": <Composed Element>,
-    "DelimiterImageIndex": 75,
-    "ImageOn": <Image>,
-    "ImageOff": <Image>,
-    "ImageNoAlarm": <Image>,
-    "UnknownTF6": 1,
-    "UnknownTF7": 1
-  },
-  "HeartProgress": { // 12 
-    "LineScale": <Image Set>
-  },
-  "CaloriesProgress": { // 15
-    "LineScale": <Image Set>
-  }
+  
 }
 ```
 
@@ -154,13 +46,13 @@
     "SpacingY": <number>,            // 7
     "ImageIndex": <number>,          // 8
     "ImagesCount": <number>          // 9
-    }
+}
 ```
 
 ##### Alignment
 "TopLeft" = 18
 "TopCenter" = 24
-"TopRight"
+"TopRight" = 20
 
 
 ## Full Json Example

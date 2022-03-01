@@ -3,7 +3,7 @@ using WatchFace.Parser.Attributes;
 
 namespace WatchFace.Parser.Elements.BasicElements
 {
-    public class Scale
+    public class LinearScaleObject
     {
         [ParameterId(1)]
         [ParameterImageIndex]

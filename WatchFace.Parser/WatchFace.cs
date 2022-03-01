@@ -21,7 +21,7 @@ namespace WatchFace.Parser
         public Weather Weather { get; set; }
 
         [ParameterId(7)]
-        public Progress StepsProgress { get; set; }
+        public ProgressObject StepsProgress { get; set; }
 
         [ParameterId(8)]
         public Status Status { get; set; }
@@ -36,7 +36,7 @@ namespace WatchFace.Parser
         public Other Other { get; set; }
 
         [ParameterId(12)]
-        public Progress HeartProgress { get; set; }
+        public ProgressObject HeartProgress { get; set; }
 
         [ParameterId(13)]
         public UnknownType14 Unknown13 { get; set; }
@@ -45,9 +45,12 @@ namespace WatchFace.Parser
         public UnknownType14 Unknown14 { get; set; }
         
         [ParameterId(15)]
-        public Progress CaloriesProgress { get; set; }
+        public ProgressObject CaloriesProgress { get; set; }
         
         [ParameterId(18)]
         public Alarm Alarm { get; set; }
+        
+        [ParameterId(18)]
+        public LunarDate LunarDateCN1 { get; set; }
     }
 }

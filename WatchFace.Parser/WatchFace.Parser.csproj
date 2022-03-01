@@ -66,10 +66,11 @@
     <Compile Include="Elements\BasicElements\CoordinatesObject.cs" />
     <Compile Include="Elements\BasicElements\ImageObject.cs" />
     <Compile Include="Elements\BasicElements\ImageSetObject.cs" />
+    <Compile Include="Elements\BasicElements\TextBoxObject.cs" />
     <Compile Include="Elements\BasicElements\UnknownType14d6.cs" />
     <Compile Include="Elements\BasicElements\UnknownType.cs" />
     <Compile Include="Elements\BasicElements\ImageBoxObject.cs" />
-    <Compile Include="Elements\BasicElements\Scale.cs" />
+    <Compile Include="Elements\BasicElements\LinearScaleObject.cs" />
     <Compile Include="Elements\Battery.cs" />
     <Compile Include="Elements\BatteryText.cs" />
     <Compile Include="Elements\Date.cs" />
@@ -79,8 +80,9 @@
     <Compile Include="Elements\DateElements\MonthAndDayAndYear.cs" />
     <Compile Include="Elements\DateElements\OneLineMonthAndDay.cs" />
     <Compile Include="Elements\DateElements\SeparateMonthAndDay.cs" />
+    <Compile Include="Elements\LunarDate.cs" />
     <Compile Include="Elements\Other.cs" />
-    <Compile Include="Elements\Progress.cs" />
+    <Compile Include="Elements\ProgressObject.cs" />
     <Compile Include="Elements\Status.cs" />
     <Compile Include="Elements\StatusElements\StatusObject.cs" />
     <Compile Include="Elements\UnknownType14.cs" />
@@ -94,7 +96,9 @@
     <Compile Include="Elements\WeatherElements\Temperature.cs" />
     <Compile Include="Elements\WeatherElements\TemperatureNumber.cs" />
     <Compile Include="Elements\WeatherElements\TodayTemperature.cs" />
+    <Compile Include="Elements\WeatherElements\UVIndexObject.cs" />
     <Compile Include="Elements\WeatherElements\WeatherIcon.cs" />
+    <Compile Include="Elements\WeatherElements\WindObject.cs" />
     <Compile Include="Helpers\DrawerHelper.cs" />
     <Compile Include="Interfaces\IDrawable.cs" />
     <Compile Include="JsonConverters\DrawingOrderJsonConverter.cs" />

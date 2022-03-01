@@ -3,15 +3,8 @@ using WatchFace.Parser.Elements.BasicElements;
 
 namespace WatchFace.Parser.Elements.ActivityElements
 {
-    public class Calories
+    public class Calories : TextBoxObject
     {
-        [ParameterId(1)]
-        public ImageBoxObject Text { get; set; }
-
-        [ParameterId(2)]
-        [ParameterImageIndex]
-        public long? SuffixImageIndex { get; set; }
-
         [ParameterId(3)]
         [ParameterImageIndex]
         public long? PrefixImageIndex { get; set; }

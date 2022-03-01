@@ -3,7 +3,7 @@ using WatchFace.Parser.Elements.BasicElements;
 
 namespace WatchFace.Parser.Elements
 {
-    public class Progress
+    public class ProgressObject
     {
         [ParameterId(1)]
         public ImageObject GoalImage { get; set; }
@@ -12,6 +12,9 @@ namespace WatchFace.Parser.Elements
         public ImageSetObject LineScale { get; set; }
 
         [ParameterId(3)]
-        public CircleScale Circle { get; set; }
+        public LinearScaleObject LinearScale { get; set; }
+        
+        [ParameterId(4)]
+        public CircleScale CircleScale { get; set; }
     }
 }

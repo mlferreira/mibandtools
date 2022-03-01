@@ -10,3 +10,4 @@ An attempt to make [Amazfitbip Tools](https://bitbucket.org/valeronm/amazfitbipt
 - test DayAmPmElement
 - fix colors
 - check json generation (might not be deleting the old one)
+- lunar date drawer

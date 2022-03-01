@@ -12,7 +12,7 @@ namespace WatchFace.Parser.Elements
         public ImageSetObject BatteryIcon { get; set; }
 
         [ParameterId(3)]
-        public Scale Scale { get; set; }
+        public LinearScaleObject LinearScale { get; set; }
 
         [ParameterId(5)]
         public long? Unknown5 { get; set; }

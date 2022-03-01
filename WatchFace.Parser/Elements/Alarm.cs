@@ -12,7 +12,8 @@ namespace WatchFace.Parser.Elements
         public ImageBoxObject Text { get; set; }
 
         [ParameterId(2)]
-        public long? DelimiterImageIndex { get; set; }
+        [ParameterImageIndex]
+        public long DelimiterImageIndex { get; set; }
 
         [ParameterId(3)]
         public ImageObject ImageOn { get; set; }
