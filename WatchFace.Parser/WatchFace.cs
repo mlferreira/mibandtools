@@ -38,6 +38,9 @@ namespace WatchFace.Parser
         [ParameterId(12)]
         public Progress HeartProgress { get; set; }
 
+        [ParameterId(13)]
+        public UnknownType14 Unknown13 { get; set; }
+        
         [ParameterId(14)]
         public UnknownType14 Unknown14 { get; set; }
         

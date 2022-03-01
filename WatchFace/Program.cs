@@ -147,7 +147,7 @@ namespace WatchFace
             var outputDirectory = Path.GetDirectoryName(inputDirectory);
             var baseName = Path.GetFileName(inputDirectory);
             var outputFileName = Path.Combine(outputDirectory, $"{baseName}_packed.res");
-            var logFileName = Path.Combine(outputDirectory, $"{baseName}_packed.log");
+            var logFileName = Path.Combine(outputDirectory, $"{baseName}_packing.log");
             SetupLogger(logFileName);
 
             FileDescriptor resDescriptor;
@@ -207,7 +207,8 @@ namespace WatchFace
         {
             var outputDirectory = CreateOutputDirectory(inputFileName);
             var baseName = Path.GetFileNameWithoutExtension(inputFileName);
-            SetupLogger(Path.Combine(outputDirectory, $"{baseName}.log"));
+
+            SetupLogger(Path.Combine(outputDirectory, $"{baseName}_unpacking.log"));
 
             FileDescriptor resDescriptor;
             using (var stream = File.OpenRead(inputFileName))

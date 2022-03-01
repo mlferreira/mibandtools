@@ -1,15 +1,12 @@
-﻿using Newtonsoft.Json;
+﻿using System.Collections.Generic;
 using WatchFace.Parser.Attributes;
-using WatchFace.Parser.Elements.BasicElements;
-using WatchFace.Parser.Elements.TimeElements;
-using WatchFace.Parser.JsonConverters;
 
 namespace WatchFace.Parser.Elements
 {
     public class Other
     {
         [ParameterId(1)]
-        public AnimationObject[] Animation { get; set; }
+        public List<AnimationObject> Animation { get; set; }
 
         [ParameterId(2)]
         public long Unknown2 { get; set; }
