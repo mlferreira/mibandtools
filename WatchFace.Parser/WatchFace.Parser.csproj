@@ -57,7 +57,9 @@
     <Compile Include="Elements\ActivityElements\DistanceObject.cs" />
     <Compile Include="Elements\ActivityElements\PulseObject.cs" />
     <Compile Include="Elements\ActivityElements\StepsObject.cs" />
+    <Compile Include="Elements\Alarm.cs" />
     <Compile Include="Elements\AnalogDialFace.cs" />
+    <Compile Include="Elements\AnimationObject.cs" />
     <Compile Include="Elements\Background.cs" />
     <Compile Include="Elements\BasicElements\CircleScale.cs" />
     <Compile Include="Elements\AnalogDialFaceElements\ClockHand.cs" />
@@ -77,6 +79,7 @@
     <Compile Include="Elements\DateElements\MonthAndDayAndYear.cs" />
     <Compile Include="Elements\DateElements\OneLineMonthAndDay.cs" />
     <Compile Include="Elements\DateElements\SeparateMonthAndDay.cs" />
+    <Compile Include="Elements\Other.cs" />
     <Compile Include="Elements\Progress.cs" />
     <Compile Include="Elements\Status.cs" />
     <Compile Include="Elements\StatusElements\StatusObject.cs" />

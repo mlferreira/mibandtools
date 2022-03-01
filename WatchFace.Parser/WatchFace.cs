@@ -32,6 +32,9 @@ namespace WatchFace.Parser
         [ParameterId(10)]
         public AnalogDialFace AnalogDialFace { get; set; }
         
+        [ParameterId(11)]
+        public Other Other { get; set; }
+
         [ParameterId(12)]
         public Progress HeartProgress { get; set; }
 
@@ -40,5 +43,8 @@ namespace WatchFace.Parser
         
         [ParameterId(15)]
         public Progress CaloriesProgress { get; set; }
+        
+        [ParameterId(18)]
+        public Alarm Alarm { get; set; }
     }
 }

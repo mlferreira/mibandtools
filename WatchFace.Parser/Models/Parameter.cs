@@ -83,7 +83,10 @@ namespace WatchFace.Parser.Models
             while (stream.Position < stream.Length)
             {
                 var parameter = ReadFrom(stream, traceOffset);
-                result.Add(parameter);
+                if (parameter != null)
+                {
+                    result.Add(parameter);
+                }
             }
             return result;
         }
@@ -96,10 +99,13 @@ namespace WatchFace.Parser.Models
 
             if (id == 0)
             {
+                Logger.Warn($"Decompiling proccess, SKIPPED important bit. id: {id}");
+                return null;
                 throw new ArgumentException("Parameter with zero Id is invalid.");
             }
 
             var value = ReadValue(fileStream);
+
             if (flags.HasFlag(ParameterFlags.HasChildren))
             {
                 Logger.Trace(() => TraceWithOffset($"{id} ({rawId:X2}): {value} bytes", traceOffset));

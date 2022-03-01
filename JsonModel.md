@@ -351,6 +351,18 @@
           "ImageIndex": 65,
           "ImagesCount": 10
         },
+        "MonthsEN": {
+          "X": 44,
+          "Y": 190,
+          "ImageIndex": 110,
+          "ImagesCount": 12
+        },
+        "MonthsCN": {
+          "X": 44,
+          "Y": 190,
+          "ImageIndex": 110,
+          "ImagesCount": 12
+        },
         "Day": { // 5.1.1.4
           "TopLeftX": 9,  // 5.1.1.4.1
           "TopLeftY": 128,  // 5.1.1.4.2

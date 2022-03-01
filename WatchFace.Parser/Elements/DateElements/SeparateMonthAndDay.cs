@@ -7,8 +7,12 @@ namespace WatchFace.Parser.Elements.DateElements
     {
         [ParameterId(1)]
         public ImageBoxObject Month { get; set; }
-
-        // TODO: Looks like here should be Id 2 also
+        
+        [ParameterId(2)]
+        public ImageSetObject MonthsEN { get; set; }
+        
+        [ParameterId(3)]
+        public ImageSetObject MonthsCN { get; set; }
 
         [ParameterId(4)]
         public ImageBoxObject Day { get; set; }

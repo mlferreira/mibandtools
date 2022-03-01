@@ -66,16 +66,16 @@ namespace WatchFace.Parser
             var parametersStream = StreamBlock(_stream, (int) coordinatesTableSize);
 
             var result = new List<Parameter>(parametersDescriptors.Count);
-            foreach (var prameterDescriptor in parametersDescriptors)
+            foreach (var parameterDescriptor in parametersDescriptors)
             {
-                var descriptorOffset = prameterDescriptor.Children[0].Value;
-                var descriptorLength = prameterDescriptor.Children[1].Value;
-                Logger.Debug("[Reader.cs] [ReadParameters()] Reading descriptor for parameter {0}", prameterDescriptor.Id);
+                var descriptorOffset = parameterDescriptor.Children[0].Value;
+                var descriptorLength = parameterDescriptor.Children[1].Value;
+                Logger.Debug("[Reader.cs] [ReadParameters()] Reading descriptor for parameter {0}", parameterDescriptor.Id);
                 Logger.Debug("[Reader.cs] [ReadParameters()] Descriptor offset: {0}, Descriptor length: {1}", descriptorOffset, descriptorLength);
                 parametersStream.Seek(descriptorOffset, SeekOrigin.Begin);
                 var descriptorStream = StreamBlock(parametersStream, (int) descriptorLength);
-                Logger.Debug("[Reader.cs] [ReadParameters()] Parsing descriptor for parameter {0}...", prameterDescriptor.Id);
-                result.Add(new Parameter(prameterDescriptor.Id, Parameter.ReadList(descriptorStream)));
+                Logger.Debug("[Reader.cs] [ReadParameters()] Parsing descriptor for parameter {0}...", parameterDescriptor.Id);
+                result.Add(new Parameter(parameterDescriptor.Id, Parameter.ReadList(descriptorStream)));
             }
             return result;
         }
