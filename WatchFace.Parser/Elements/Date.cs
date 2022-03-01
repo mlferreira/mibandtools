@@ -23,5 +23,8 @@ namespace WatchFace.Parser.Elements
         
         [ParameterId(6)]
         public ImageSetObject CN2WeekDays { get; set; }
+        
+        [ParameterId(7)]
+        public CoordinatesObject Unknown7 { get; set; }
     }
 }

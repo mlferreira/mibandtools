@@ -12,5 +12,9 @@ namespace WatchFace.Parser.Elements.ActivityElements
         [ParameterId(3)]
         [ParameterImageIndex]
         public long? NoDataImageIndex { get; set; }
+        
+        [ParameterId(4)]
+        [ParameterImageIndex]
+        public long? SuffixImageIndex { get; set; }
     }
 }

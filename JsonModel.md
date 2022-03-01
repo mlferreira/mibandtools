@@ -220,7 +220,46 @@
         "ImagesCount": 10 // 3.2.2.4
       }
     },
-    "UnknownV11": 0 // 3.11
+    "TimeDelimiterImage": {
+      "X": 70,
+      "Y": 210,
+      "ImageIndex": 19
+    },
+    "TimeZone1": {
+      "TopLeftX": 32,
+      "TopLeftY": 185,
+      "BottomRightX": 148,
+      "BottomRightY": 301,
+      "Alignment": "TopRight",
+      "SpacingX": 0,
+      "SpacingY": 0,
+      "ImageIndex": 120,
+      "ImagesCount": 10
+    },
+    "TimeZone1DelimiterImage": 130,
+    "TimeZone2": {
+      "TopLeftX": 0,
+      "TopLeftY": 155,
+      "BottomRightX": 148,
+      "BottomRightY": 301,
+      "Alignment": "TopRight",
+      "SpacingX": 0,
+      "SpacingY": 0,
+      "ImageIndex": 120,
+      "ImagesCount": 10
+    },
+    "TimeZone2DelimiterImage": 130,
+    "UnknownV11": 0, // 3.11
+    "TimeZone1NoTime": {
+      "X": 113,
+      "Y": 281,
+      "ImageIndex": 133
+    },
+    "TimeZone2NoTime": {
+      "X": 0,
+      "Y": 150,
+      "ImageIndex": 133
+    }
   },
   "Activity": { // 4
     "Steps": { // 4.1
@@ -234,7 +273,8 @@
         "SpacingY": 0, // 4.1.1.7
         "ImageIndex": 60, // 4.1.1.8
         "ImagesCount": 10 // 4.1.1.9
-      }
+      },
+      "SuffixImageIndex": 53 // 4.1.3
     },
     "Calories": { // 4.3
       "Text": { // 4.3.1
@@ -263,7 +303,37 @@
         "ImageIndex": 12, // 4.4.1.8
         "ImagesCount": 10 // 4.4.1.9
       },
-      "NoDataImageIndex": 41 // 4.4.3
+      "NoDataImageIndex": 41, // 4.4.3
+      "SuffixImageIndex": 53 // 4.4.4
+    },
+    "Distance": { // 4.5
+      "Number": { // 4.5.1
+        "TopLeftX": 0, // 4.5.1.1
+        "TopLeftY": 392, // 4.5.1.2
+        "BottomRightX": 152, // 4.5.1.3
+        "BottomRightY": 405, // 4.5.1.4
+        "Alignment": "TopCenter", // 4.5.1.5
+        "SpacingX": 0, // 4.5.1.6
+        "SpacingY": 0, // 4.5.1.7
+        "ImageIndex": 94, // 4.5.1.8
+        "ImagesCount": 10 // 4.5.1.9
+      },
+      "KmSuffixImageIndex": 21, // 4.5.2
+      "DecimalPointImageIndex": 20, // 4.5.3
+      "MilesSuffixImageIndex": 40 // 4.5.4
+    },
+    "PAI": { // 4.6
+      "Number": { // 4.6.1
+        "TopLeftX": 75, // 4.6.1.1
+        "TopLeftY": 448, // 4.6.1.2
+        "BottomRightX": 105, // 4.6.1.3
+        "BottomRightY": 217, // 4.6.1.4
+        "Alignment": "TopCenter", // 4.6.1.5
+        "SpacingX": 0, // 4.6.1.6
+        "SpacingY": 0, // 4.6.1.7
+        "ImageIndex": 94, // 4.6.1.8
+        "ImagesCount": 10 // 4.6.1.9
+      }
     },
     "UnknownV7": 0 // 4.7
   },
@@ -324,20 +394,154 @@
       "ImageIndex": 35, // 5.4.3
       "ImagesCount": 7 // 5.4.4
     },
-    "CNWeekDays": {
-      "X": 14,
-      "Y": 288,
-      "ImageIndex": 49,
-      "ImagesCount": 7
+    "CNWeekDays": { // 5.5
+      "X": 14, // 5.5.1
+      "Y": 288, // 5.5.2
+      "ImageIndex": 49, // 5.5.3
+      "ImagesCount": 7 // 5.5.4
     },
-    "CN2WeekDays": {
-      "X": 14,
-      "Y": 288,
-      "ImageIndex": 42,
-      "ImagesCount": 7
+    "CN2WeekDays": { // 5.6
+      "X": 14, // 5.6.1
+      "Y": 288, // 5.6.2
+      "ImageIndex": 42, // 5.6.3
+      "ImagesCount": 7 // 5.6.4
+    },
+    "Unknown7": {
+      "X": 104,
+      "Y": 271
+    }
+  },
+  "Weather": { // 6
+    "Icon": { // 6.1
+      "CustomIcon": { // 6.1.2
+        "X": 22, // 6.1.2.1
+        "Y": 85, // 6.1.2.2
+        "ImageIndex": 22, // 6.1.2.3
+        "ImagesCount": 26 // 6.1.2.4
+      },
+      "Unknown3": { // 6.1.3
+        "X": 22, // 6.1.3.1
+        "Y": 100 // 6.1.3.2
+      },
+      "Unknown4": { // 6.1.4
+        "X": 22, // 6.1.4.1
+        "Y": 100 // 6.1.4.2
+      }
+    },
+    "Temperature": { // 6.2
+      "Current": { // 6.2.1
+        "Number": { // 6.2.1.1
+          "TopLeftX": 4, // 6.2.1.1.1
+          "TopLeftY": 130, // 6.2.1.1.2
+          "BottomRightX": 76, // 6.2.1.1.3
+          "BottomRightY": 163, // 6.2.1.1.4
+          "Alignment": "TopCenter", // 6.2.1.1.5
+          "SpacingX": 0, // 6.2.1.1.6
+          "SpacingY": 0, // 6.2.1.1.7
+          "ImageIndex": 104, // 6.2.1.1.8
+          "ImagesCount": 10 // 6.2.1.1.9
+        },
+        "MinusImageIndex": 91, // 6.2.1.2
+        "DegreesImageIndex": 92 // 6.2.1.3
+      },
+      "Today": {
+        "OneLine": {
+          "Number": {
+            "TopLeftX": 4,
+            "TopLeftY": 157,
+            "BottomRightX": 79,
+            "BottomRightY": 143,
+            "Alignment": "TopCenter",
+            "SpacingX": 0,
+            "SpacingY": 0,
+            "ImageIndex": 94,
+            "ImagesCount": 10
+          },
+          "MinusSignImageIndex": 91,
+          "DelimiterImageIndex": 90,
+          "AppendDegreesForBoth": true,
+          "DegreesImageIndex": 92
+        }
+      }
+    },
+    "AirPollution": {
+      "Icon": {
+        "X": 10,
+        "Y": 180,
+        "ImageIndex": 66,
+        "ImagesCount": 6
+      }
+    },
+    "Humidity": {
+      "Text": {
+        "TopLeftX": 108,
+        "TopLeftY": 76,
+        "BottomRightX": 148,
+        "BottomRightY": 91,
+        "Alignment": "TopLeft",
+        "SpacingX": 0,
+        "SpacingY": 0,
+        "ImageIndex": 94,
+        "ImagesCount": 10
+      },
+      "SuffixImageIndex": 118
+    },
+    "Wind": {
+      "Text": {
+        "TopLeftX": 108,
+        "TopLeftY": 101,
+        "BottomRightX": 146,
+        "BottomRightY": 114,
+        "Alignment": "TopLeft",
+        "SpacingX": 0,
+        "SpacingY": 0,
+        "ImageIndex": 94,
+        "ImagesCount": 10
+      },
+      "ImageSuffixEN": 119,
+      "ImageSuffixCN1": 119,
+      "ImageSuffixCN2": 119
+    },
+    "UVIndex": {
+      "UV": {
+        "Text": {
+          "TopLeftX": 108,
+          "TopLeftY": 126,
+          "BottomRightX": 142,
+          "BottomRightY": 137,
+          "Alignment": "TopLeft",
+          "SpacingX": 0,
+          "SpacingY": 0,
+          "ImageIndex": 94,
+          "ImagesCount": 10
+        },
+        "SuffixImageIndex": 77
+      },
+      "UVCN": {
+        "X": 108,
+        "Y": 126,
+        "ImageIndex": 72,
+        "ImagesCount": 5
+      },
+      "UVCN2": {
+        "X": 108,
+        "Y": 126,
+        "ImageIndex": 72,
+        "ImagesCount": 5
+      }
     }
   },
   "StepsProgress": { // 7
+    "CircleScale": {
+      "CenterX": 76,
+      "CenterY": 387,
+      "RadiusX": 50,
+      "RadiusY": 50,
+      "StartAngle": 335,
+      "EndAngle": 25,
+      "Width": 5,
+      "Color": "0x2D92D2"
+    },
     "LineScale": { // 7.2
       "X": 21, // 7.2.1
       "Y": 432, // 7.2.2
@@ -359,6 +563,7 @@
         "X": 69, // 8.2.1.1
         "Y": 84 // 8.2.1.2
       },
+      "ImageIndexOn": 71, // 8.2.2
       "ImageIndexOff": 72 // 8.2.3
     },
     "Bluetooth": { // 8.3
@@ -383,6 +588,7 @@
         "ImageIndex": 73, // 9.1.1.8
         "ImagesCount": 10 // 9.1.1.9
       },
+      "PrefixImageIndex": 83, // 9.1.?
       "SuffixImageIndex": 84 // 9.1.4
     },
     "BatteryIcon": { // 9.2
@@ -390,6 +596,20 @@
       "Y": 10, // 9.2.2
       "ImageIndex": 83, // 9.2.3
       "ImagesCount": 10 // 9.2.4
+    },
+    "Linear": {
+      "StartImageIndex": 48,
+      "Segments": [
+        {
+          "X": 42,
+          "Y": 25
+        },
+        // ...
+        {
+          "X": 105,
+          "Y": 25
+        }
+      ]
     }
   },
   "Other": {
@@ -406,6 +626,22 @@
         "UnknownTF4": 1
       }
     ]
+  },
+  "HeartProgress": { // 12 
+    "LineScale": { // 12.2
+      "X": 21, // 12.2.1
+      "Y": 307, // 12.2.2
+      "ImageIndex": 54, // 12.2.3
+      "ImagesCount": 10 // 12.2.4
+    }
+  },
+  "CaloriesProgress": { // 15
+    "LineScale": { // 15.2
+      "X": 21, // 15.2.1
+      "Y": 364, // 15.2.2
+      "ImageIndex": 64, // 15.2.3
+      "ImagesCount": 10 // 15.2.4
+    }
   },
   "Alarm": {
     "Text": {
@@ -438,21 +674,29 @@
     "UnknownTF6": 1,
     "UnknownTF7": 1
   },
-  "HeartProgress": { // 12 
-    "LineScale": { // 12.2
-      "X": 21, // 12.2.1
-      "Y": 307, // 12.2.2
-      "ImageIndex": 54, // 12.2.3
-      "ImagesCount": 10 // 12.2.4
-    }
-  },
-  "CaloriesProgress": { // 15
-    "LineScale": { // 15.2
-      "X": 21, // 15.2.1
-      "Y": 364, // 15.2.2
-      "ImageIndex": 64, // 15.2.3
-      "ImagesCount": 10 // 15.2.4
-    }
+  "LunarDateCN1": {
+    "LunarMonth": {
+      "X": 38,
+      "Y": 300,
+      "ImageIndex": 144,
+      "ImagesCount": 12
+    },
+    "LunarDay1": {
+      "TopLeftX": 76,
+      "TopLeftY": 300,
+      "BottomRightX": 114,
+      "BottomRightY": 285,
+      "Alignment": "TopLeft",
+      "SpacingX": 1,
+      "SpacingY": 0,
+      "ImageIndex": 156,
+      "ImagesCount": 9
+    },
+    "LunarDayOf0X": 165,
+    "LunarDayOf2X": 166,
+    "LunarDayOf10": 169,
+    "LunarDayOf20": 167,
+    "LunarDayOf30": 168
   }
 }
 ```

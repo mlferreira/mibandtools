@@ -54,7 +54,7 @@
     <Compile Include="Elements\Activity.cs" />
     <Compile Include="Elements\ActivityElements\ActivityBaseObject.cs" />
     <Compile Include="Elements\ActivityElements\Calories.cs" />
-    <Compile Include="Elements\ActivityElements\FormattedNumber.cs" />
+    <Compile Include="Elements\ActivityElements\DistanceObject.cs" />
     <Compile Include="Elements\ActivityElements\PulseObject.cs" />
     <Compile Include="Elements\ActivityElements\StepsObject.cs" />
     <Compile Include="Elements\AnalogDialFace.cs" />
@@ -85,7 +85,6 @@
     <Compile Include="Elements\TimeElements\AmPm.cs" />
     <Compile Include="Elements\TimeElements\TwoDigits.cs" />
     <Compile Include="Elements\Weather.cs" />
-    <Compile Include="Elements\WeatherElements\CustomWeatherIcon.cs" />
     <Compile Include="Elements\WeatherElements\AirPollution.cs" />
     <Compile Include="Elements\WeatherElements\OneLineTemperature.cs" />
     <Compile Include="Elements\WeatherElements\SeparateTemperature.cs" />
@@ -99,6 +98,7 @@
     <Compile Include="JsonConverters\ColorJsonConverter.cs" />
     <Compile Include="Models\DrawingOrderPosition.cs" />
     <Compile Include="Models\Elements\Activity\CaloriesElement.cs" />
+    <Compile Include="Models\Elements\Activity\PAIElement.cs" />
     <Compile Include="Models\Elements\Activity\StepsElement.cs" />
     <Compile Include="Models\Elements\Activity\StepsGoalElement.cs" />
     <Compile Include="Models\Elements\Activity\PulseElement.cs" />

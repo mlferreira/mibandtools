@@ -12,6 +12,8 @@ namespace WatchFace.Parser.Models.Elements
         
         public ImageBoxElement Number { get; set; }
         public long NoDataImageIndex { get; set; }
+        
+        public long SuffixImageIndex { get; set; }
 
         public void Draw(Graphics drawer, Bitmap[] resources, WatchState state)
         {
@@ -20,6 +22,7 @@ namespace WatchFace.Parser.Models.Elements
             if (state.Pulse != null)
             {
                 images.AddRange(Number.GetImagesForNumber(resources, state.Pulse.Value));
+                images.Add(resources[SuffixImageIndex]);
             }
             else
             {
@@ -40,6 +43,9 @@ namespace WatchFace.Parser.Models.Elements
                     return Number;
                 case 3:
                     NoDataImageIndex = parameter.Value;
+                    return new ValueElement(parameter, this);
+                case 4:
+                    SuffixImageIndex = parameter.Value;
                     return new ValueElement(parameter, this);
                 default:
                     return base.CreateChildForParameter(parameter);

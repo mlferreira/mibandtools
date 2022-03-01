@@ -19,9 +19,12 @@ namespace WatchFace.Parser.Elements
         public PulseObject Pulse { get; set; }
 
         [ParameterId(5)]
-        public FormattedNumber Distance { get; set; }
+        public DistanceObject Distance { get; set; }
+        
+        [ParameterId(6)]
+        public ActivityBaseObject PAI { get; set; }
         
         [ParameterId(7)]
-        public long? Unknown7 { get; set; }
+        public long? UnknownV7 { get; set; }
     }
 }

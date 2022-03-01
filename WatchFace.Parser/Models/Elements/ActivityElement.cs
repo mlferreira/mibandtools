@@ -10,6 +10,7 @@
         public CaloriesElement Calories { get; set; }
         public PulseElement Pulse { get; set; }
         public DistanceElement Distance { get; set; }
+        public PAIElement PAI { get; set; }
 
         protected override Element CreateChildForParameter(Parameter parameter)
         {
@@ -30,6 +31,9 @@
                 case 5:
                     Distance = new DistanceElement(parameter, this);
                     return Distance;
+                case 6:
+                    PAI = new PAIElement(parameter, this);
+                    return PAI;
                 default:
                     return base.CreateChildForParameter(parameter);
             }

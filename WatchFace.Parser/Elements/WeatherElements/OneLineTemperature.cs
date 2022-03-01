@@ -6,7 +6,7 @@ namespace WatchFace.Parser.Elements.WeatherElements
     public class OneLineTemperature
     {
         [ParameterId(1)]
-        public ImageBoxObject ComposedElement { get; set; }
+        public ImageBoxObject Number { get; set; }
 
         [ParameterId(2)]
         [ParameterImageIndex]
