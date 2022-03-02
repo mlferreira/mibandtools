@@ -50,7 +50,7 @@ namespace WatchFace.Parser
         [ParameterId(18)]
         public Alarm Alarm { get; set; }
         
-        [ParameterId(18)]
+        [ParameterId(21)]
         public LunarDate LunarDateCN1 { get; set; }
     }
 }

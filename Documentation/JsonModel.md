@@ -490,7 +490,7 @@
         "ImageIndex": 73, // 9.1.1.8
         "ImagesCount": 10 // 9.1.1.9
       },
-      "PrefixImageIndex": 83, // 9.1.?
+      "PrefixImageIndex": 83, // 9.1.3
       "SuffixImageIndex": 84 // 9.1.4
     },
     "BatteryIcon": { // 9.2
